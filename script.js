@@ -1,6 +1,9 @@
+
+
 let lastPrompt = '';
 let url = `https://api.zhishuyun.com/midjourney/imagine?token=${token}`;
 let image_id='';
+
 
 
 // 全局监听键盘事件
@@ -35,7 +38,7 @@ function setOnclick() {
       let loadingItem = document.createElement('div');
       loadingItem.className = 'chat-item';
       loadingItem.innerHTML = `
-        <img src="./logo.png" alt="头像">
+        <img src="https://mj.gudada.xyz/logo.png" alt="头像">
         <div class="content">图片正在生成中，请稍候...</div>
       `;
       
@@ -72,7 +75,7 @@ function setOnclick() {
           let responseItem = document.createElement('div');
           responseItem.className = 'chat-item';
           responseItem.innerHTML = `
-            <img src="./logo.png" alt="头像">
+            <img src="https://mj.gudada.xyz/logo.png" alt="头像">
             <div class="content"><img id="photo" src="${myData.image_url}" /><br>
               <div class="uv_button">
                 <button id="upsample1" class="row">U1</button>
@@ -175,7 +178,7 @@ function submitMessage() {
     chatItem.className = 'chat-item right';
     chatItem.innerHTML = `
         <div class="content">${message}</div>
-        <img src="./mylogo.png" alt="头像">
+        <img src="https://mj.gudada.xyz/mylogo.png" alt="头像">
         
     `;
 
@@ -197,7 +200,7 @@ function submitMessage() {
       let loadingItem = document.createElement('div');
       loadingItem.className = 'chat-item';
       loadingItem.innerHTML = `
-        <img src="./logo.png" alt="头像">
+        <img src="https://mj.gudada.xyz/logo.png" alt="头像">
         <div class="content">图片正在生成中，请稍候...</div>
       `;
       chats.appendChild(loadingItem);
@@ -217,7 +220,7 @@ function submitMessage() {
           let responseItem = document.createElement('div');
           responseItem.className = 'chat-item';
           responseItem.innerHTML = `
-            <img src="./logo.png" alt="头像">
+            <img src="https://mj.gudada.xyz/logo.png" alt="头像">
             <div class="content"><img id="photo" src="${myData.image_url}" /><br>
               <div class="uv_button">
                 <button id="upsample1" class="row">U1</button>
@@ -330,7 +333,7 @@ function refresh() {
     let loadingItem = document.createElement('div');
     loadingItem.className = 'chat-item';
     loadingItem.innerHTML = `
-      <img src="./logo.png" alt="头像">
+      <img src="https://mj.gudada.xyz/logo.png" alt="头像">
       <div class="content">图片正在生成中，请稍候...</div>
     `;
     
@@ -363,7 +366,7 @@ function refresh() {
         let responseItem = document.createElement('div');
         responseItem.className = 'chat-item';
         responseItem.innerHTML = `
-          <img src="./logo.png" alt="头像">
+          <img src="https://mj.gudada.xyz/logo.png" alt="头像">
           <div class="content"><img id = "photo" src="${myData.image_url}" /><br>
               <div class="uv_button">
                 <button id="upsample1" class="row">U1</button>
