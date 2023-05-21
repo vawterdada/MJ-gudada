@@ -1,5 +1,3 @@
-
-const token = process.env.MY_TOKEN
 let lastPrompt = '';
 let url = `https://api.zhishuyun.com/midjourney/imagine?token=${token}`;
 let image_id='';
